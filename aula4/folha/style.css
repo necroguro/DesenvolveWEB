@@ -11,11 +11,14 @@ p{
 h1{
     color: rgb(248, 248, 248);
 }
+h2{
+    padding-bottom: 15px
+}
 header {
     padding: 40px 30px 50px 70px;
     border-color: #ffffff;
     margin: 1px;
-    background:#e24b00 ;
+    background:#a88b84 ;
     padding: 10px;
     text-align: center;
 }
@@ -61,12 +64,35 @@ li::marker {
     padding: 10px;
 }
 .produto h2 {
-    color: #0e6856:
+    color: #3a2c29:
 }
 .produto p {
-    margin 5px 0
+    margin: 5px 0
 }
 .preco {
-    color: #coral;
+    color: #a70000;
     font-weight: bold;
+}
+form {
+    padding: 15px;
+    border: 2px solid #a88b84;
+}
+label {
+    color: #41322e;
+    font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #CCC;
+}
+input[type="submit"]{
+    background-color: #a88b84;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
 }
