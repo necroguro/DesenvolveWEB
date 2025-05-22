@@ -10,6 +10,7 @@
     --magenta: #FF004F;
     --bg-cinza: #262626;
     --bg-cinza-claro: #ABABAB;
+    --verde: #61b752;
 }
 html {
     scroll-behavior: smooth;
@@ -357,28 +358,33 @@ nav .fa-solid {
     }
 
 /* SOBRE */
-.sobre-col-1, .sobre-col-2 {
-    flex-basis: 100%;
+    .sobre-col-1, .sobre-col-2 {
+        flex-basis: 100%;
+    }
+    .sobre-col-1 {
+        margin-bottom: 30px;
+    }
+    .sobre-col-2 {
+        font-size: 14px;
+    }
+    .aba-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    /* CONTATO */
+    .contato_direita, .contato_esquerda {
+        flex-basis: 100%
+    }
+    /* COPYRIGHT */
+    .copyright {
+        font-size: 14px;
+    }
+    nav i .fa-solid, .fa-bars {
+        cursor: pointer;
+    }
 }
-.sobre-col-1 {
-    margin-bottom: 30px;
-}
-.sobre-col-2 {
-    font-size: 14px;
-}
-.aba-links {
-    font-size: 16px;
-    margin-right: 20px;
-}
-/* CONTATO */
-.contato_direita, .contato_esquerda {
-    flex-basis: 100%
-}
-/* COPYRIGHT */
-.copyright {
-    font-size: 14px;
-}
-nav i .fa-solid, .fa-bars {
-    cursor: pointer;
-}
+#msg {
+    color: var(--verde);
+    margin-top: -40px;
+    display: block;
 }
