@@ -7,7 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/78c1e879d9.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/7c4f254726.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 
 <body>
@@ -24,13 +25,13 @@
                     <li><a href="#contato">Contato</a></li>
                     <i class="fa-solid fa-xmark" onclick="fecharmenu()"></i>
                 </ul>
-
                 <i class="fa-solid fa-bars" onclick="abrirmenu()"></i>
             </nav>
             <div class="texto-cabecalho">
                 <p>UI/UX Designer</p>
                 <h1>Olá, meu nome é <span>John Doe</span></h1>
                 <p>Posso te ajudar com <span class="habilidades"></span></p>
+
             </div>
         </div>
     </div>
@@ -175,10 +176,12 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">
+        <div class="copyright"><!-- Símbolo copyright Alt + 0169 -->
             <p>Copyright © 2025. Orgulhosamente feito com <i class="fa-solid fa-heart"></i> na Terra do Saci.</p>
         </div>
     </div>
+
+
 
     <script>
         var abaLinks = document.getElementsByClassName("aba-links");
@@ -191,7 +194,7 @@
                 abaConteudo.classList.remove("aba-ativa"); /* Remove a classe "aba-ativa" de todos os conteudos */
             }
             event.currentTarget.classList.add("link-ativo"); /* Adiciona a classe "link-ativo" ao link clicado */
-            document.getElementById(abaNome).classList.add("aba-ativa"); /* Adiciona a classe "aba-ativa" ao conteudo correspondente (usando o ID passado como parâmetro) */
+            document.getElementById(abaNome).classList.add("aba-ativa"); /* Adiciona a classe "aba-ativa" ao conteúdo correspondente (usando o ID passado como parâmetro) */
         }
     </script>
     <script>
@@ -204,7 +207,7 @@
         }
     </script>
     <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbxQumuwoyFRzMB_kzaRb1V7aTJRuugRpevBfG7bi0wuyyJyOuxCCdtiqV57mrlgR6_-/exec'
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyabgqyaXAYHqoPVP0N32aNAjsUkZ4lF067ob0EVPBXAu5v_1Jq_Bavt7iIxJestYJ_/exec'
         const form = document.forms['submit-to-google-sheet']
         const msg = document.getElementById("msg")
 
@@ -213,15 +216,15 @@
             fetch(scriptURL, { method: 'POST', body: new FormData(form) })
                 .then(response => {
                     msg.innerHTML = "Mensagem enviada com sucesso!"
-                    setTimeout(function() {
+                    setTimeout(function () {
                         msg.innerHTML = ""
-                }, 5000)
-                form.reset()
+                    }, 5000)
+                    form.reset()
                 })
                 .catch(error => console.error('Error!', error.message))
         })
     </script>
-    <script>
+    <!-- <script>
         var typed = new Typed('.habilidades', {
             strings: ['Desenvolvimento de Interface WEB/APP', 'Web Development', 'Desenvolvimento de Apps para Android e iOS'],
             typeSpeed: 60,
@@ -229,7 +232,36 @@
             backDelay: 500,
             loop: true,
         })
+    </script> -->
+
+
+    <script>
+        var typed = new Typed('.habilidades', {
+            strings: ['Desenvolvimento de Interface WEB/APP', 'Web Development', 'Desenvolvimento de Apps para Android e iOS'],
+            typeSpeed: 60,
+            backSpeed: 40,
+            backDelay: 500,
+            loop: true,
+
+        });
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
 
 </html>

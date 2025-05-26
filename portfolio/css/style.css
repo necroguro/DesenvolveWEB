@@ -10,7 +10,7 @@
     --magenta: #FF004F;
     --bg-cinza: #262626;
     --bg-cinza-claro: #ABABAB;
-    --verde: #61b752;
+    --verde: #61B752;
 }
 html {
     scroll-behavior: smooth;
@@ -71,6 +71,10 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 .texto-cabecalho h1 span {
+    color: var(--magenta);
+}
+.texto-cabecalho .habilidades {
+    margin-top: 10px;
     color: var(--magenta);
 }
 /* ******** SOBRE ******** */
@@ -306,13 +310,13 @@ form .botao2 {
     text-align: center;
     padding: 30px 0;
     background-color: var(--bg-cinza);
-    font-weight: 700;
+    font-weight: 300;
     margin-top: 20px;
 }
 .copyright i {
     color: var(--magenta);
 }
-/* --------------- telas pequenas --------------- */
+/* ----------- telas pequenas ----------- */
 nav .fa-solid {
     display: none;
 }
@@ -320,11 +324,11 @@ nav .fa-solid {
     #header {
         background-image: url(../imagens/cel_john_doe.png);
     }
-    .texto-cabeçalho {
+    .texto-cabecalho {
         margin-top: 30%;
         font-size: 16px;
     }
-    .texto-cabeçalho h1 {
+    .texto-cabecalho h1 {
         font-size: 30px;
     }
     nav .fa-solid {
@@ -341,7 +345,6 @@ nav .fa-solid {
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
-
     }
     nav ul li {
         display: block;
@@ -356,8 +359,7 @@ nav .fa-solid {
     .subtitulo {
         font-size: 40px;
     }
-
-/* SOBRE */
+    /* SOBRE */
     .sobre-col-1, .sobre-col-2 {
         flex-basis: 100%;
     }
@@ -373,7 +375,7 @@ nav .fa-solid {
     }
     /* CONTATO */
     .contato_direita, .contato_esquerda {
-        flex-basis: 100%
+        flex-basis: 100%;
     }
     /* COPYRIGHT */
     .copyright {
