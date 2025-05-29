@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+}
+:root {
+    --bg-nave-Bar-azul-claro: #1758ba;
+    --bg-nave-Bar-azul-escuro: #092550;
+    --bg-cinza-claro: #F8F9FA;
+    --branco: #FFF;
+    --traco-titulo: #092550;
+    --laranja: #ff5d1c;
+    --vermelho: #FF004F;
+}
+#barra-nav {
+    position:sticky; /* fixa a barra no topo*/
+    top: 0;
+    z-index: 10;
+}
+.navbar {
+    background-color: var(--traco-titulo);
+    padding: 0;
+}
+.navbar-brand img {
+    height: 40px;
+    padding-left: 20px;
+}
+.navbar-nav li {
+    padding: 0 10px;
+}
+.navbar-nav li a {
+    color: var(--laranja);
+    font-weight: 700;
+    float: right;
+    text-align: left;
+}
+/* ----------- BANNER ----------- */
+#banner {
+    background-image: linear-gradient(to right, var(--bg-nave-Bar-azul-claro),var(--bg-nave-Bar-azul-escuro));
+    color: var(--branco);
+    padding-top: 5%;
+}
+#banner a {
+    color: var(--branco)
+    text-decoration: none;
+}
+.titulo_promo {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+    color: var(--laranja);
+}
+.botao_play {
+    width: 45px;
+    margin: 20px;
+}
+.img-baixo {
+    width: 100%;
+}
